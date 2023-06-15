@@ -182,5 +182,60 @@ print(festival1.music_style())
 
 #     Create a class called Product with attributes for name, price, and quantity.
 # Implement a method to calculate the total value of the product (price * quantity).
-# Create multiple objects of the Product class and calculate their total values.    
+# Create multiple objects of the Product class and calculate their total values.
+
+class Products:
+           
+        def __init__(self,name,price,quantity):
+            self.name=name
+            self.price=price
+            self.quantity=quantity
+
+        def calculate_products(self):
+            return f""
+            
+
+
+
+
+#             Implement a class called Student with attributes for name, age, and grades (a
+# list of integers). Include methods to calculate the average grade, display the
+# student information, and determine if the student has passed (average grade >=
+# 60). Create objects for the Student class and demonstrate the usage of these
+# methods.
+
+class Student:
+
+    def __init__(self, name, age, grades):
+        self.name = name
+        self.age = age
+        self.grades = grades
+
+    def calculate_average_grade(self):
+        total_grades = sum(self.grades)
+        average_grade = total_grades / len(self.grades)
+        return average_grade
+
+    def display_student_information(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Grades:", self.grades)
+
+    def has_passed(self):
+        average_grade = self.calculate_average_grade()
+        return average_grade >= 60
+
+student1 = Student("John Doe", 18, [90, 80, 70])
+student2 = Student("Jane Doe", 19, [80, 70, 60])
+
+print("Student 1")
+student1.display_student_information()
+print("Average grade:", student1.calculate_average_grade())
+print("Has passed:", student1.has_passed())
+
+print("Student 2")
+student2.display_student_information()
+print("Average grade:", student2.calculate_average_grade())
+print("Has passed:", student2.has_passed())
+  
         

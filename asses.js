@@ -188,3 +188,68 @@ return "New instuments need to be bought"
 console.log(manageFestivals());
 console.log(stageArrangements());
 
+
+
+
+//     Create a class called Product with attributes for name, price, and quantity.
+//  Implement a method to calculate the total value of the product (price * quantity).
+//  Create multiple objects of the Product class and calculate their total values.
+
+class Product{
+    constructor(){
+this.name=name
+this.price=price
+this.quantity=this.quantity
+    }
+    calculateTotalValue(){
+
+    }
+}
+
+
+
+    //         Implement a class called Student with attributes for name, age, and grades (a
+    //  list of integers). Include methods to calculate the average grade, display the
+    //  student information, and determine if the student has passed (average grade >=
+    // 60). Create objects for the Student class and demonstrate the usage of these
+    //  methods.
+    
+    class Student {
+
+        constructor(name, age, grades) {
+            this.name = name;
+            this.age = age;
+            this.grades = grades;
+        }
+    
+        calculateAverageGrade() {
+            const totalGrades = this.grades.reduce((a, b) => a + b);
+            const averageGrade = totalGrades / this.grades.length;
+            return averageGrade;
+        }
+    
+        displayStudentInformation() {
+            console.log(`Name: ${this.name}`);
+            console.log(`Age: ${this.age}`);
+            console.log(`Grades: ${this.grades}`);
+        }
+    
+        hasPassed() {
+            const averageGrade = this.calculateAverageGrade();
+            return averageGrade >= 60;
+        }
+    }
+    
+    const student1 = new Student("John Doe", 18, [90, 80, 70]);
+    const student2 = new Student("Jane Doe", 19, [80, 70, 60]);
+    
+   
+    console.log("Student 1");
+    student1.displayStudentInformation();
+    console.log("Average grade:", student1.calculateAverageGrade());
+    console.log("Has passed:", student1.hasPassed());
+    
+    console.log("Student 2");
+    student2.displayStudentInformation();
+    console.log("Average grade:", student2.calculateAverageGrade());
+    console.log("Has passed:", student2.hasPassed());
